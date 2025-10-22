@@ -1,0 +1,39 @@
+body {
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(135deg,#f5f7fa,#e9efff);
+  color: #111;
+  margin: 0;
+  padding: 24px;
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(20,30,60,0.08);
+}
+
+.emotion-buttons { display:flex; gap:12px; margin: 16px 0; flex-wrap:wrap; }
+.emo-btn {
+  padding: 10px 16px; border-radius: 10px; border: none; cursor: pointer;
+  background: #f0f0f0; transition: all .12s;
+}
+.emo-btn.active { background: linear-gradient(90deg,#6dd3ff,#7ae3a1); color: white; }
+
+.content { display:flex; gap: 20px; margin-top: 18px; flex-wrap:wrap; }
+.left { flex: 1; min-width: 280px; }
+.right { width: 360px; min-width: 280px; }
+
+.track { display:flex; justify-content:space-between; align-items:center; padding:10px;
+  border-radius:8px; margin-bottom:8px; cursor:pointer; background:#fafafa; }
+.track.playing { background: #d6f5e0; }
+
+.player { padding:12px; border-radius:10px; background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+
+.controls { display:flex; gap:12px; margin:12px 0; }
+.progress { height:8px; background:#eee; border-radius:8px; cursor:pointer; overflow:hidden; }
+.progress-bar { height:100%; background:linear-gradient(90deg,#6dd3ff,#7ae3a1); width:0%; }
+
+.time { font-size:12px; color:#666; margin-top:8px; }
