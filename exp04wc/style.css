@@ -1,0 +1,74 @@
+/* Background using Adobe Stock link directly */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://as2.ftcdn.net/v2/jpg/05/34/22/12/1000_F_534221289_wKBgEj6lYB0r4Yq7AbAbtFqgC6vYY9D7.jpg') 
+              no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Registration Form Container */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 350px;
+  backdrop-filter: blur(8px);
+}
+
+/* Form Heading */
+h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* Inputs & Labels */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #004aad;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #003380;
+}
+
+/* Validation Message */
+#message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
